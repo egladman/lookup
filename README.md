@@ -4,7 +4,7 @@ Set reminders for every 20 minutes to take a 20-second break and focus your eyes
 
 ### How to install
 ```
-wget https://raw.githubusercontent.com/egladman/lookup/master/lookup.sh -o /usr/local/bin/lookup
+curl "https://raw.githubusercontent.com/egladman/lookup/master/lookup.sh" > /usr/local/bin/lookup
 ```
 
 ### How to use (manually)
