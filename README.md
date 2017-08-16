@@ -18,3 +18,32 @@ lookup 20
 
 Setup a cron job or systemd service file.
 
+##### systemd
+
+Create `/etc/systemd/system/lookup.service`
+
+```
+[Unit]
+Description=Look up reminders to reduce eye strain
+
+[Service]
+ExecStart=/usr/local/bin/lookup 20
+
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Start service
+
+```
+sudo systemctl start lookup
+```
+
+Enable service
+
+```
+sudo systemctl enable lookup
+```
+
